@@ -9,6 +9,11 @@ class HelloPdfSubmissionXBlock(XBlock):
     """
     Minimal XBlock: learner types text -> we POST to FastAPI -> store returned link as submission.
     """
+    # 👇 these make it show up in Studio's palette
+    category = "hello-pdf-submission"      # must match the slug you added in Advanced Module List
+    display_name = "Hello Pdf Submission"  # the label you’ll see in Studio
+    icon_class = "problem"                  # or "other", "video", etc. purely visual
+    
     # Author-configurable
     api_base = String(default=DEFAULT_API_BASE, scope=Scope.content, help="FastAPI base URL")
     title = String(default="My Assignment", scope=Scope.content)
