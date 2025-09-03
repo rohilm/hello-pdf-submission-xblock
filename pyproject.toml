@@ -10,7 +10,7 @@ hello-pdf-submission = "hello_pdf_submission:HelloPdfSubmissionXBlock"
 requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
-#[project]
+# Now this is working [project]
 #name = "hello-pdf-submission-xblock"
 #version = "0.1.1"                # bump from 0.1.0
 #description = "Minimal XBlock that posts text to FastAPI, stores returned PDF link."
