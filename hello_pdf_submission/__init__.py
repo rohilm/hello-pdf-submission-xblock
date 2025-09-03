@@ -13,6 +13,8 @@ class HelloPdfSubmissionXBlock(XBlock):
     category = "hello-pdf-submission"      # must match the slug you added in Advanced Module List
     display_name = "Hello Pdf Submission"  # the label you’ll see in Studio
     icon_class = "problem"                  # or "other", "video", etc. purely visual
+    has_author_view = True   # 👈 add this
+    
     
     # Author-configurable
     api_base = String(default=DEFAULT_API_BASE, scope=Scope.content, help="FastAPI base URL")
