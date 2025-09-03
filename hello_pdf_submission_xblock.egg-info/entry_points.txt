@@ -1,0 +1,2 @@
+[xblock.v1]
+hello-pdf-submission = hello_pdf_submission:HelloPdfSubmissionXBlock

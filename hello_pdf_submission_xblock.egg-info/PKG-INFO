@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: hello-pdf-submission-xblock
+Version: 0.1.1
+Summary: Minimal XBlock that posts text to FastAPI, stores returned PDF link.
+Requires-Python: >=3.8

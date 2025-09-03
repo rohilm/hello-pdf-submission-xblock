@@ -1,0 +1,8 @@
+pyproject.toml
+setup.cfg
+hello_pdf_submission/__init__.py
+hello_pdf_submission_xblock.egg-info/PKG-INFO
+hello_pdf_submission_xblock.egg-info/SOURCES.txt
+hello_pdf_submission_xblock.egg-info/dependency_links.txt
+hello_pdf_submission_xblock.egg-info/entry_points.txt
+hello_pdf_submission_xblock.egg-info/top_level.txt

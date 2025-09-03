@@ -1,0 +1,22 @@
+[project]
+name = "hello-pdf-submission-xblock"
+version = "0.1.1"
+dependencies = []   # keep empty to avoid image build conflicts
+
+[project.entry-points."xblock.v1"]
+hello-pdf-submission = "hello_pdf_submission:HelloPdfSubmissionXBlock"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+#[project]
+#name = "hello-pdf-submission-xblock"
+#version = "0.1.1"                # bump from 0.1.0
+#description = "Minimal XBlock that posts text to FastAPI, stores returned PDF link."
+#requires-python = ">=3.8"
+## IMPORTANT: no dependencies here; edx-platform provides XBlock/requests/etc.
+#dependencies = []
+#
+#[project.entry-points."xblock.v1"]
+#hello-pdf-submission = "hello_pdf_submission:HelloPdfSubmissionXBlock"
