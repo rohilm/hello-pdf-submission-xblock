@@ -11,13 +11,7 @@ class HelloPdfSubmissionXBlock(XBlock):
     """
     # 👇 these make it show up in Studio's palette
     category = "hello-pdf-submission"      # must match the slug you added in Advanced Module List
-    # ⬇️ CHANGE THIS: use an XBlock String field, not a raw str
-    display_name = String(
-        display_name="Component Display Name",
-        help="Name shown in Studio when adding the component",
-        default="Hello Pdf Submission",
-        scope=Scope.settings,
-    )
+    display_name = "Hello Pdf Submission"  # the label you’ll see in Studio
     icon_class = "problem"                  # or "other", "video", etc. purely visual
     has_author_view = True   # 👈 add this
     
