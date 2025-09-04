@@ -1,6 +1,6 @@
 [project]
 name = "hello-pdf-submission-xblock"
-version = "0.1.6"
+version = "0.1.7"
 dependencies = []   # keep empty to avoid image build conflicts
 
 [project.entry-points."xblock.v1"]
