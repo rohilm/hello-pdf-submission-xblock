@@ -18,9 +18,29 @@ class HelloPdfSubmissionXBlock(XBlock):
         default="Hello Pdf Submission",
         scope=Scope.settings,
     )
-    icon_class = "problem"                  # or "other", "video", etc. purely visual
+    icon_class = "other"                  # or "other", "video", etc. purely visual
     has_author_view = True   # 👈 add this
-    
+
+    def author_view(self, context=None):
+        """
+        What Studio shows in the course outline preview.
+        Keep it light: do NOT call external services here.
+        """
+        html = f"""
+        <div class="hello-pdf-author" style="border:1px solid #ddd;padding:12px;border-radius:8px">
+          <strong>{self.display_name}</strong>
+          <div style="font-size:90%;opacity:.8">
+            Preview in Studio. API base: <code>{self.api_base}</code><br/>
+            Learners will see the student UI in the LMS.
+          </div>
+        </div>
+        """
+        return Fragment(html)
+
+    # Optional: only needed if you have a gear “Edit” form in Studio
+    # def studio_view(self, context=None):
+    #     html = "<p>Settings form goes here…</p>"
+    #     return Fragment(html)
     
     # Author-configurable
     api_base = String(default=DEFAULT_API_BASE, scope=Scope.content, help="FastAPI base URL")
